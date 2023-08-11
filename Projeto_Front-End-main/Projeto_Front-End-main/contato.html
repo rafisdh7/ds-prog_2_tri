@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- Estrutura HTML da página inicial do site -->
+<!-- lang define o idioma da página-->
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+
+        <!-- As tags a seguir, title e link, definem o nome e ícone da página que serão exibidos no aba do navegador -->
+        <title>DS - Regente</title>
+        <link rel="icon" type="image/x-icon" href="imagens/logo-icon.png">
+
+        <!-- A seguir estão sendo linkados os arquivos css que definirão a estilização da página -->
+        <!-- reset.css resetá/zera/normaliza todo e qualquer estilo predefinido pelo navegador -->
+        <!-- style.css define a estilização a ser aplicada na página -->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <!-- Cabeçalho da página: logo e nome do site -->
+        <header id="topo">
+            <img class="logo" src="download.png" alt="aguia de fogo">
+            <h1 class="titulo">Desenvolvimento de Sistemas</h1>
+        </header>
+    
+        <!-- Menu de Navegação -->
+        <nav>
+            <ul class="menu">
+                <li class="item-menu"><a href="index.html">Home</a></li>
+                <li class="item-menu"><a href="sobre.html">Sobre</a></li>
+                <li class="item-menu"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Conteúdo, parte principal da página, será dividido em 3 seções -->
+        <main>
+            <!-- Seção 1: Campos de preenchimento -->
+            <section>
+                <h2 class="titulo-section">Formulário de contato</h2>
+                <form>
+                    <label for="nome">Nome completo</label>
+                    <input type="text" id="nome" class="entrada_dados" required>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" class="entrada_dados" placeholder="email@dominio.com">
+                    <label for="celular">Celular</label>
+                    <input type="tel" id="celular" class="entrada_dados" required placeholder="(xx) x xxxx-xxxx">
+                    <label for="obs">Observação</label>
+                    <textarea cols="70" rows="10" id="obs" class="entrada_dados" placeholder="Comentários e/ou observação"></textarea>
+
+                    <fieldset>
+                        <legend>Qual o motivo de seu contato?</legend>
+                        <label for="radio-op1">
+                            <input type="radio" value="conversa" id="radio-op1" name="contato">Quero uma oportunidade.
+                        </label>
+                        <label for="radio-op2">
+                            <input type="radio" value="reclamar" id="radio-op2" name="contato">Quero ganhar dinheiro.
+                        </label>
+                        <label for="radio-op3">
+                            <input type="radio" value="nsei" id="radio-op3" name="contato" checked>Cai de paraquedas aqui kkkkk.
+                        </label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Como prefere ser respondido?</legend>
+                        <select>
+                            <option>Whatsapp &#9990;</option>
+                            <option>E-mail &#9993;</option>
+                            <option>Ligação &#9743;</option>
+                        </select>
+                    </fieldset>
+
+                    <label class="spam"><input type="checkbox" checked required>Gostaria de receber nossas correntes de Whatsapp?</label>
+
+                    <input class="enviar" type="submit" value="Enviar formulário &#8684;">
+
+                </form>
+            </section>
+            
+            <!-- Seção 2: Redes Sociais -->
+            <section>
+                <h2 class="titulo-section">Redes Sociais</h2>
+
+            </section>
+            
+            <aside class="sidebar">
+                <h3 class="sidebar-titulo">Parceiros</h3>
+                <a class="sidebar-links" href=""><img class="sidebar-banners" src="download (1).png"
+                        alt="pepsi"></a>
+                <a class="sidebar-links" href=""><img class="sidebar-banners" src="mercadopago.png"
+                        alt="mercado pago"></a>
+                <a class="sidebar-links" href=""><img class="sidebar-banners" src="5dd7a0033d3812e45c674e7d4d59735e.png" alt="playstation"></a>
+                <a class="sidebar-links" href=""><img class="sidebar-banners" src="download (2).png"
+                        alt="Stalone Cobra"></a>
+                <a class="sidebar-links" href=""><img class="sidebar-banners" src="download (3).png"
+                        alt="palyboy"></a>
+                <a class="sidebar-links" href=""><img class="sidebar-banners" src="download (4).png" alt="shell"></a>
+                <a class="sidebar-links" href=""><img class="sidebar-banners" src="logo-smile-512x512.png"
+                        alt="Ifood"></a>
+                <a class="sidebar-links" href=""><img class="sidebar-banners" src="download (5).png"
+                        alt="kibon"></a>
+                <p class="sidebar-info">Todos os parceiros são testados e aprovados pelo autor do site kkkkk.</p>
+                <img class="sidebar-img" src="Selo-de-qualidade.png" alt="Selo de Qualidade">
+            </aside>
+
+            <a class="btn_inicio" href="#topo" title="Voltar ao Início">&#8657</a>
+
+        </main>
+        
+        <!-- Rodapé da página: contém o logo e texto -->
+        <footer>
+            <img class="logo-rodape" src="download.png" alt="aguia de fogo">
+            <p class="texto-rodape">Projeto Desenvolvido para servir de modelo e aprendiazagem ao longo do curso de
+                desenvolvimentos em sistemas.</p>
+            <p class="texto-rodape">Todos os diretos liberados. Uncreative Commons.</p>
+            <p class="texto-rodape" style="font-size: 33px;">&#9982;</p>
+        </footer>
+    </body>
+</html>
